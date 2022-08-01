@@ -7,6 +7,18 @@
 - 각자 블로그, github, notion 편한대 정리해서 흔적 남겨놓기 
 - 매주 월요일, (8시 10시 고정)
 
-```java
-int a = 3
+```swift
+protocol AccountPasswordChangerType {
+    
+    var nowPw: String? { get }
+    var newPw: String? { get }
+    var newPwConfirm: String? { get }
+    
+    var isValidNewPw: Bool { get }
+    var isValidNewPwConfirm: Bool { get }
+    
+    var nowPwError: String? { get }
+    var newPwError: String? { get }
+    var newPwConfirmError: String? { get }
+}
 ```
