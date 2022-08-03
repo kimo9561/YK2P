@@ -32,6 +32,12 @@ extension ColorListViewController: UICollectionViewDataSource {
 ## FlowLayout이란 
 - CollectionView를 수평, 수직으로 나타내 줄 수 있는 뷰 
 - ```UICollectionViewFlowLayout```을 따른다.
-- 
+- Item 사이즈는 기본 50으로 지정된다.
+- ```minimumInterItemSpacing```과 ```minimumLineItemSpacing```을 통해 상하좌우 공백을 지정할 수 있다. (기본 값 : 10)
+- ```SectionInset```도 적용을 할 수 있다. (기본 값 : 0)
+
+```swift
+
+```
 
 # ViewController
