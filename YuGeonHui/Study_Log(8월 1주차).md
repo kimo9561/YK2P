@@ -35,9 +35,21 @@ extension ColorListViewController: UICollectionViewDataSource {
 - Item 사이즈는 기본 50으로 지정된다.
 - ```minimumInterItemSpacing```과 ```minimumLineItemSpacing```을 통해 상하좌우 공백을 지정할 수 있다. (기본 값 : 10)
 - ```SectionInset```도 적용을 할 수 있다. (기본 값 : 0)
+- 위와 같은 속성은 ```UICollectionView```속성이 아닌 Layout의 속성이기 때문에 TypeCating이 필요하다.
 
 ```swift
-
+if let layout = listCollectionView.collectionViewLayout as? UICollectionViewFlowLayout { // Type Casting
+            
+    // MARK: - Cell크기 변경
+    layout.itemSize = CGSize(width: 100, height: 100)
+            
+    // MARK: - Cell 라인 여백, 셀 여백(수직, 수평에 따라 둘이 달라진다.)
+    layout.minimumInteritemSpacing = 10
+    layout.minimumLineSpacing = 10
+           
+     // MARK: - Section Inset (항상 같은 값을 유지한다.)
+     layout.sectionInset = UIEdgeInsets(top: 40, left: 20, bottom: 20, right: 40)
+}
 ```
 
 # ViewController
