@@ -47,8 +47,8 @@ if let layout = listCollectionView.collectionViewLayout as? UICollectionViewFlow
     layout.minimumInteritemSpacing = 10
     layout.minimumLineSpacing = 10
            
-     // MARK: - Section Inset (항상 같은 값을 유지한다.)
-     layout.sectionInset = UIEdgeInsets(top: 40, left: 20, bottom: 20, right: 40)
+    // MARK: - Section Inset (항상 같은 값을 유지한다.)
+    layout.sectionInset = UIEdgeInsets(top: 40, left: 20, bottom: 20, right: 40)
 }
 ```
 
