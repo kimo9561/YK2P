@@ -30,6 +30,8 @@ extension ColorListViewController: UICollectionViewDataSource {
 ```
 
 ## FlowLayout이란 
-
+- CollectionView를 수평, 수직으로 나타내 줄 수 있는 뷰 
+- ```UICollectionViewFlowLayout```을 따른다.
+- 
 
 # ViewController
